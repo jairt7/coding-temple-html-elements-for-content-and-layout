@@ -1,0 +1,45 @@
+a:hover {
+    color:blueviolet
+}
+
+.pokemon:hover {
+    outline: 3px solid black
+}
+
+button {
+    border-radius: 8px;
+    transition-duration: 0.3s;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+ul {
+    list-style-image: url('resources/pokeball.png');
+}
+
+form {
+    padding: 16px;
+    border-color: black;
+
+}
+
+form:hover {
+    outline: 3px solid black
+}
+
+table, th, td {
+    padding: 16px;
+    border: 2px solid;
+    border-color: blue;
+    border-width: 3px;
+    border-collapse: collapse;
+    
+}
+
+tr:nth-child(even) {
+    background-color: lightgray;
+}
