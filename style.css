@@ -1,5 +1,6 @@
 a:hover {
-    color:blueviolet
+    color:black;
+    transition-duration: 0.3s;
 }
 
 .pokemon:hover {
@@ -10,15 +11,23 @@ button {
     border-radius: 8px;
     transition-duration: 0.3s;
     font-size: 16px;
+    background-color: aquamarine;
+    color: darkblue;
 }
 
 button:hover {
-    background-color: black;
+    background-color: darkblue;
     color: white;
+}
+
+button:active {
+    transition: transform 0.2s ease;
+    transform: scale(1.2);
 }
 
 ul {
     list-style-image: url('resources/pokeball.png');
+
 }
 
 form {
@@ -42,4 +51,30 @@ table, th, td {
 
 tr:nth-child(even) {
     background-color: lightgray;
+}
+
+.background-fade {
+    background-color: rgba(0, 255, 0, 0.3);
+}
+
+h1 {
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+body {
+    background-color: azure;
+}
+
+.pokeball {
+    animation: spin 6s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
 }
